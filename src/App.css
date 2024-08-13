@@ -1,0 +1,61 @@
+body{
+  background-color: #154c79;
+}
+
+h1, h2{
+  color: rgb(226,135,67);
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* Rows in the board */
+.board-row {
+  display: flex;
+}
+
+/* Individual square styling */
+.square {
+  width: 80px; /* Increased size for better visibility */
+  height: 80px;
+  background-color: #f9f9f9; /* Light background for better contrast */
+  border: 2px solid #333; /* Darker border for better visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px; /* Larger font size for 'X' and 'O' */
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Square hover effect */
+.square:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Square active state */
+.square:active {
+  background-color: #d0d0d0;
+}
+
+/* Styles for the 'X' and 'O' characters */
+.square.X {
+  color: #ff5733; /* Distinct color for 'X' */
+}
+
+.square.O {
+  color: #33c1ff; /* Distinct color for 'O' */
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}

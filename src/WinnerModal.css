@@ -1,0 +1,15 @@
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.ReactModal__Content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.play_button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
